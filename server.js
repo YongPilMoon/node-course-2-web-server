@@ -58,6 +58,13 @@ app.get('/bad', (req, res) =>{
     });
 });
 
+app.get('/contact', (req, res) =>{
+    res.render('contact.hbs', {
+        pageTitle: 'Contact Page',
+        email: 'm71661@gmail.com'
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
